@@ -1,0 +1,341 @@
+@import (inline) 'http://atnartur.ru/styles/main.min.css';
+
+@mainColor: #0099cc;
+
+header {
+    // black & white
+    @color: #000;
+    @secondColor: @mainColor;
+    @bgColor:#f0f0f0;
+
+    // blue
+    //@color: #fff;
+    //@secondColor: lighten(@color, 0.2);
+    //@bgColor: @mainColor;
+    border-bottom:1px solid @mainColor;
+    box-shadow: none;
+    padding-top:10px;
+    background: transparent;
+    overflow: visible;
+    background: @bgColor;
+
+    .logo {
+        overflow: hidden;
+
+        .info {
+            text-align: left;
+            overflow: hidden;
+
+            .col-md-9{
+                overflow: hidden;
+            }
+
+            .line_common(){
+                line-height: 1;
+                margin-top:25px;
+            }
+            .col-md-3 {
+                text-align: center;
+
+                #photo{
+                    @width: 200px;
+                    width: @width;
+                    border-radius: @width / 2;
+                    margin-bottom: 15px;
+                    margin-right: 20px;
+                    text-align: center;
+                }
+            }
+
+            h1 {
+                .line_common();
+                font-weight: bold;
+
+                a {
+                    color: @color;
+
+                    &:hover {
+                        color: @secondColor;
+                        opacity: 0.7;
+                    }
+
+                    small {
+                        color: @color;
+                    }
+                }
+                @media (max-width: 500px) {
+                    font-size:40px;
+                    line-height: 1.1;
+                }
+            }
+            h2 {
+                color: @color;
+                font-size: 30px;
+                .line_common();
+            }
+            span, small {
+                white-space: nowrap;
+            }
+
+            #socials {
+                .line_common();
+                padding-left: 0;
+                overflow: hidden !important;
+
+                @media (max-width: 992px) {
+                    text-align: center;
+                }
+
+                li {
+                    line-height: 1;
+                    list-style: none;
+                    float: left;
+                    font-size: 24px;
+                    font-weight:bold;
+                    margin-right: 10px;
+                    color: @color;
+                    white-space: nowrap;
+
+                    @media (max-width: 992px) {
+                        float: none;
+                        display: inline;
+                    }
+                    @media (max-width: 500px) {
+                        line-height: 1.5;
+
+                        &.write {
+                            display: block;
+                            width:100%;
+                        }
+                    }
+
+                    &.delimiter {
+                        margin-right: 10px;
+                        font-weight: normal;
+
+                        @media (max-width: 720px) {
+                            display: block;
+                            width: 100%;
+                            content: '&nbsp;';
+                            opacity: 0;
+                        }
+                    }
+
+                    a {
+                        padding: 10px;
+                        color: @color;
+                        font-weight: normal;
+
+                        &.bold {
+                            font-weight: bold !important;
+                        }
+
+                        &:hover {
+                            color: @bgColor;
+                            background: @secondColor;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.posts {
+    article {
+        & > .col-md-3 {
+            padding-bottom: 0;
+        }
+        .header-icon {
+            font-size:50px;
+            text-align: center;
+            color: @mainColor;
+
+            @media (max-width: 992px) {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                font-size: 30px;
+            }
+        }
+        h2:first-child {
+            margin-top:0;
+        }
+        p {
+            font-size: 17px;
+        }
+        
+        #stride_logo {
+            background: #181920;
+            width: 183px;
+            max-width: 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .work {
+            font-size: 24px;
+            padding-top: 10px;
+
+            border-left: 1px solid @mainColor;
+
+            &:before {
+                position: relative;
+                content: "";
+                width: 10px;
+                height: 10px;
+                background: @mainColor;
+                border-radius: 5px;
+                top: -10px;
+                left: -6px;
+            }
+
+            .time {
+                padding-bottom:10px;
+                float:left;
+
+            }
+            h2 {
+                margin-top:10px;
+                text-align: right;
+            }
+
+
+            .img {
+                text-align: center;
+
+                a {
+                    img {
+                        margin-top: -5px;
+                        height: 30px;
+                        text-align: center;
+                    }
+                }
+                @media (max-width: 992px) {
+                    text-align: left;
+                }
+            }
+
+            .info {
+                padding-top: 5px;
+                float:left;
+                padding-bottom: 10px;
+
+                a {
+                    color: #000;
+                    text-decoration: none;
+                }
+
+                h2 {
+                    text-align: left;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}
+
+.label-project-tag {
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: normal;
+    float: right;
+    background: @mainColor;
+    color: #fff;
+}
+
+.modal-title small {
+    position: relative;
+    bottom: 5px;
+
+    .label-project-tag {
+        float: none;
+    }
+}
+.modal-backdrop {
+    z-index: auto;
+}
+
+.modal-body{
+    &, & p {
+        font-size: 17px;
+    }
+}
+
+.project-view {
+    .project-link {
+        margin-right: 20px;
+    }
+}
+
+.carousel.slide {
+    a.item {
+        div {
+            min-height: 200px;
+            display: flex;
+            align-items: center;
+
+            &, img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    a.left, a.right {
+        background: none;
+
+        i {
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            right: 5px;
+        }
+        &.left{
+            i {
+                left: 5px;
+            }
+        }
+    }
+}
+
+.modal-header {
+    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    .pos-sticky{
+        position: sticky;
+        top: -20px;
+        margin-bottom:30px;
+    }
+}
+
+
+/* roboto-100 - latin_cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Roboto Thin'), local('Roboto-Thin'),
+       url('/dist/fonts/roboto-v18-latin_cyrillic-ext-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/dist/fonts/roboto-v18-latin_cyrillic-ext-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300 - latin_cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('/dist/fonts/roboto-v18-latin_cyrillic-ext-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/dist/fonts/roboto-v18-latin_cyrillic-ext-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin_cyrillic-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+       url('/dist/fonts/roboto-v18-latin_cyrillic-ext-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/dist/fonts/roboto-v18-latin_cyrillic-ext-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

@@ -1,0 +1,44 @@
+name: Артур Атнагулов - веб-разработчик
+description: Артур Атнагулов - веб-разработчик
+keywords: atnartur.ru, web-разработка, web, Атнагулов Артур, atnartur
+mainPhoto: dist/images/photo.jpeg
+
+appleIcons:
+  - 57
+  - 60
+  - 72
+  - 76
+  - 114
+  - 120
+  - 144
+  - 152
+  - 180
+
+icons:
+  - 192
+  - 32
+  - 96
+  - 16
+
+work:
+  - time: С 2016
+    image: dist/images/stride-white.svg
+    imageId: stride_logo
+    imageAlt: Stride
+    imageHeight: 45
+    link: http://stride.one
+    info: веб-разработчик, системный администратор
+  - time: С 2013
+    image: dist/images/clienddev.png
+    imageId:
+    imageAlt: ClienDDev
+    imageHeight: 35
+    link: http://clienddev.ru
+    info: главный веб-разработчик, системный администратор, сооснователь
+  - time: Лето 2014
+    image: dist/images/smarthead.png
+    imageId:
+    imageAlt: SmartHead
+    imageHeight: 35
+    link: http://smarthead.ru
+    info: веб-разработчик (стажировка)

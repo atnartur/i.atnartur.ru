@@ -1,0 +1,147 @@
+list:
+  - name: Domlike
+    slug: domlike
+    tags:
+      - Stride
+    site: http://domlike.ru
+    short: Сервис по аренде квартир без посредников (+ интеграция с корпоративной системой заказчика)
+    tech:
+      Frontend: HTML, CSS, gulp, webpack, MatreshkaJS, nodejs (express)
+      Backend: PHP 7 (Phalcon 3, phinx), PostgreSQL
+      Инструменты: Docker, Gitlab CI
+    images:
+      - 1.svg
+      - 2.png
+    years: 2016 - настоящее время
+
+  - name: Need4speak
+    slug: n4s
+    tags:
+      - ClienDDev
+    site: http://need4speak.com
+    short: Веб-сайт с интеграцией с CRM-системой Мегаплан
+    tech:
+      Frontend: HTML, CSS, JavaScript (jQuery, MatreshkaJS), gulp, webpack
+      Backend: PHP 5.6 (Phalcon 2, phinx), nodejs (express, megaplan.js), MySQL
+      Инструменты: Docker, Gitlab CI
+    years: 2015 - 2016
+
+  - name: ClienD
+    slug: cliend
+    tags:
+      - ClienDDev
+      - Open source
+    site: http://cliend.ru
+    short: Приложение для удобного доступа к edu.tatar.ru (+ множество внутренних сервисов)
+    full: >
+      <p><b>Основные подпроекты с моим участием:</b></p>
+      <ul>
+        <li>
+          <a href="http://cliend.ru/" target="_blank">backend & frontend</a> - основные составляющие ClienD
+        </li>
+        <li>
+          <a href="http://ext.cliend.ru/" target="_blank">ClienD extension</a> - расширение, улучшающее непосредственно edu.tatar.ru
+        </li>
+        <li>
+          <a href="http://cliend.ru/projects/#crossplatform-parser" target="_blank">crossplatform parser</a> -
+          кроссплатформенная часть, предназначенная для использования на всех платформах: Android, iOS, server
+        </li>
+      </ul>
+      <p><a href="http://cliend.ru/projects" target="_blank">Весь список проектов можно посмотреть здесь</a></p>
+    images:
+      - logo.png
+      - promo.png
+    tech:
+      Frontend: HTML, CSS, JavaScript, jQuery, MatreshkaJS, gulp, webpack
+      Backend: PHP 5.6 (phinx), nodejs (express, megaplan.js), Redis, MySQL, Java
+      Инструменты: Docker, Gitlab CI
+    years: 2013 - настоящее время
+
+  - name: RVMarket
+    slug: rvmarket
+    tags:
+      - ClienDDev
+    site: http://rvmarket.ru
+    short: Разработка серверной части и административной панели для 3D-плеера диванов
+    years: 2014 - 2015
+    tech:
+      Frontend: HTML, CSS, JavaScript (jQuery, ThreeJS, MatreshkaJS), gulp, webpack
+      Backend: PHP 5.6 (Phalcon 2, phinx), nodejs, MySQL
+
+  - name: Guitar4All
+    slug: guitar4all
+    tags:
+      - ClienDDev
+    site: http://guitar4all.ru
+    short: Сервис по обучению игре на гитаре
+    tech:
+      Frontend: HTML, CSS, JavaScript (jQuery, ThreeJS, MatreshkaJS, React), gulp, webpack
+      Backend: PHP 5.6 (Phalcon 2), NodeJS, Python 3
+      Инструменты: Docker, Gitlab CI
+    years: 2016 - 2017
+
+  - name: backuper
+    slug: backuper
+    tags:
+      - Open source
+    site: https://github.com/atnartur/backuper
+    short: Инструмент для создания резервных копий и загрузки их на Яндекс.Диск
+    tech: Python
+
+  - name: megaplan.js
+    slug: megaplanjs
+    tags:
+      - Open source
+    site: https://github.com/zxqfox/megaplanjs
+    short: Библиотека для работы с API Мегаплан для NodeJS (совместно с Алексеем Ярошевичем)
+    tech: NodeJS
+
+  - name: php-qiwi
+    slug: phpqiwi
+    tags:
+      - Open source
+    site: https://github.com/atnartur/php-qiwi
+    short: PHP-библиотека для работы с платежным API от QIWI.
+    tech: PHP
+
+  - name: Phalcon-datatable
+    slug: phalcondatatable
+    tags:
+      - Open source
+    site: https://github.com/atnartur/Phalcon-datatable
+    short: Класс для работы с Datatables.js на сервере. Написан с использованием PHP-фреймворка Phalcon
+
+  - name: three-STLexporter
+    slug: three-STLexporter
+    tags:
+      - Open source
+    site: https://github.com/atnartur/three-STLexporter
+    short: Библиотека для экспорта моделей со сцены THREE.js в STL-формат (собрал несколько реализаций и немного дополнил)
+
+  - name: threejs-game
+    slug: threejs-game
+    tags:
+      - Open source
+    site: http://atnartur.github.io/threejs-game
+    short: Демонстрация работы THREE.js в виде копии игры
+    tech: JavaScript (THREE.js, Matreshka.JS)
+    images:
+      - 1.png
+
+  - name: Arkanoid
+    slug: arkanoid-console
+    tags:
+      - Open source
+    site: https://github.com/atnartur/arkanoid-console
+    short: Консольная версия игры Арканоид
+    tech: C#
+    images:
+      - 1.png
+      - 2.png
+
+  - name: Cafe4me
+    slug: cafe4me
+    short: Сервис по предзаказу столиков в кафе и ресторанах (проект закрыт)
+    tech:
+      Frontend: HTML, CSS, JavaScript (jQuery)
+      Backend: PHP 5.6, MySQL
