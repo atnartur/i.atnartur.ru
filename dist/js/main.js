@@ -11,7 +11,7 @@ $(document).ready(() => {
 
     $('.modal.project-view').on('hidden.bs.modal', () => location.hash = '_');
 
-    $.get('http://atnartur.ru/atom.xml').then(res => {
+    $.get('https://atnartur.ru/atom.xml').then(res => {
         let entries = $(res).find('entry');
         for (let i = 0; i < 5 && i < entries.length; i++) {
             let entry = $(entries[i]);
