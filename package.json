@@ -29,7 +29,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-responsive": "^2.13.0",
     "gulp-sequence": "^1.0.0",
-    "handlebars": "^4.5.3",
+    "handlebars": "^4.7.7",
     "js-yaml": "^3.13.1",
     "postcss-uncss": "^0.17.0",
     "uncss": "^0.17.2"
